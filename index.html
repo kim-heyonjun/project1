@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>adidas</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+    
+    
+    <script type="text/javascript">
+//<![CDATA[
+$(function(){
+  var mySlider=$("#slide_banner").bxSlider({
+      mode:"horizontal",   // 가로 수평으로 슬라이드 됩니다.
+      speed:500,              // 이동 속도를 설정합니다.
+      pager:false,            // 현재 위치 페이징 표시 여부 설정.
+      moveSlides:1,         // 슬라이드 이동시 갯수 설정.
+      slideWidth:500,        // 슬라이드 마다 너비 설정.
+      minSlides:3,           // 최소 노출 개수를 설정합니다.
+      maxSlides:3,          // 최대 노출 개수를 설정합니다.
+      slideMargin:0,      // 슬라이드간의 간격을 설정합니다.
+      auto:true,             // 자동으로 흐를지 설정합니다.
+      autoHover:true,    // 마우스 오버시 정시킬지 설정합니다.
+      controls:false        // 이전 다음 버튼 노출 여부 설정합니다.
+   });
+//이전 버튼을 클릭하면 이전 슬라이드로 전환됩니다.
+   $("#prevBtn").on("click",function(){
+    mySlider.goToPrevSlide();  //이전 슬라이드 배너로 이동됩니다.
+    return false; //<a>에 링크를 차단합니다.
+   });
+//다음 버튼을 클릭하면 다음 슬라이드로 전환됩니다.
+   $("#nextBtn").on("click",function(){
+    mySlider.goToNextSlide();  //다음 슬라이드 배너로 이동됩니다.
+    return false;
+   });
+});
+//]]>
+</script>
+    
+</head>
+<body>
+    <div class="wrap">
+       <!-- 여기부터 상단-->
+        <div class="header">
+          <!-- 위쪽상단 -->
+           <div class="top_header">
+            <div class="inner">
+                <ul class="util">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">주문조회</a></li>
+                    <!-- :after으로 clear:both -->
+                </ul>
+                </div>
+                </div>
+                <!-- 아랫쪽상단 -->
+                <div class="botoom_header">
+                <div class="inner">                
+                <ul class="menu">
+                    <li><a href="seoul.html">MEN</a>
+                    <div class="submenu">
+                    <ul>
+                        <li><a href="seoul.html">남성</a></li>
+                        <li><a href="seoul.html">신상품</a></li>
+                        <li><a href="seoul.html">인기상품</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="seoul.html">신발</a></li>
+                        <li><a href="seoul.html">오리지널스</a></li>
+                        <li><a href="seoul.html">트레이닝</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="seoul.html">의류</a></li>
+                        <li><a href="seoul.html">긴팔티셔츠</a></li>
+                        <li><a href="seoul.html">반팔티셔츠</a></li>
+                    </ul>
+                    <ul></ul>
+                    <ul></ul>
+                    </div>
+                    </li>
+                    <li><a href="seoul.html">WOMEN</a>
+                    <div class="submenu">
+                    <ul>
+                        <li><a href="seoul.html">여성</a></li>
+                        <li><a href="seoul.html">신상품</a></li>
+                        <li><a href="seoul.html">인기상품</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="seoul.html">신발</a></li>
+                        <li><a href="seoul.html">오리지널스</a></li>
+                        <li><a href="seoul.html">트레이닝</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="seoul.html">의류</a></li>
+                        <li><a href="seoul.html">긴팔티셔츠</a></li>
+                        <li><a href="seoul.html">반팔티셔츠</a></li>
+                    </ul>
+                    <ul></ul>
+                    <ul></ul>
+                    </div>
+                    </li>
+                    <li><a href="seoul.html">KIDS</a>
+                    <div class="submenu">
+                    <ul>
+                        <li><a href="seoul.html">키즈</a></li>
+                        <li><a href="seoul.html">신상품</a></li>
+                        <li><a href="seoul.html">인기상품</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="seoul.html">유아</a></li>
+                        <li><a href="seoul.html">신발</a></li>
+                        <li><a href="seoul.html">의류</a></li>
+                    </ul>
+                    <ul></ul>
+                    <ul></ul>
+                    <ul></ul>                    
+                    </div>
+                    </li>
+                    <li><a href="seoul.html">SPORTS</a>
+                    <div class="submenu"></div>
+                    </li>
+                    <li><a href="seoul.html">SEOUL</a></li>
+                    <!-- :after으로 clear:both -->
+                </ul>
+                <div class="logo"><a href="index.html">
+                    <img src="img/images/logo.jpg" alt="로고">
+                    </a>
+                </div>
+                <div class="search">
+                    <img src="img/images/banner1.jpg" alt="돋보기">
+                    </div>   
+                <div class="m_menu">
+                    <img src="img/images/banner2.jpg" alt="메뉴버튼">                
+                </div>
+                <!-- :after으로 clear:both -->
+                </div>
+                </div>            
+        </div>
+        <!-- 여기까지 상단 -->
+        
+        <!-- 여기부터 메인이미지 -->
+        <div class="mainimg"><a href="#">
+            <div class="main_bg"></div>
+            <div class="inner">
+        <div class="main_text">
+            <h2>비가 스타일이 되다<br>MYSHELTER</h2>
+            <p>도시의 일상,그 모든 순간을 위한 테크니컬 아우터.</p>
+            <div class="btn1"><a href="seoul.html">구매하기</a></div>
+        </div>
+        <div class="main_png1">
+            <img src="img/images/main1.png" alt="메인이미지">
+        </div>
+        <div class="main_png2">
+            <img src="img/images/main2.png" alt="메인이미지">
+        </div>
+        <!-- :after으로 cleadr:both -->
+        </div>
+        </a>
+        </div>
+        <!-- 여기까지 메인이미지 -->
+        
+        <!-- 여기부터 콘텐츠 -->
+        <div class="contents">
+           <!-- 베스트상품 -->
+            <div class="best_set">
+                <div class="besttitle">
+                    <!-- :before으로 position:absolute밑줄 -->
+                    <h2>TRENDING NOW</h2>
+                    <p>가장 인기있는 상품만 모아서</p>
+                </div>
+                <!--
+                <div class="bestslider">
+                    <div class="btn_prev">
+                        <img src="img/images/left.jpg" alt="이전">
+                    </div>
+                    <div class="best_list">
+                        <div class="slide">
+                            <img src="img/images/box1_left.jpg" alt="울트라부스트">
+                            <h3>울트라부스트 20 시티 팩</h3>
+                            <p>RUNNING</p>
+                            <h4>219,000원</h4>
+                        </div>
+                        <div class="slide">
+                            <img src="img/images/box1_center.jpg" alt="조거">
+                            <h3>나이트 조거</h3>
+                            <p>ORIGINALS</p>
+                            <h4>139,000원</h4>
+                        </div>
+                        <div class="slide">
+                            <img src="img/images/box1_right.jpg" alt="슈퍼스타">
+                            <h3>슈퍼스타</h3>
+                            <p>ORIGINALS</p>
+                            <h4>109,000원</h4>
+                        </div>
+                        <!-- :after으로 clear:both
+                    </div>                                     
+                    <div class="btn_next">
+                        <img src="img/images/right.jpg" alt="다음">
+                    </div>
+                    -->
+      <div id="banner_wrap">
+      <ul id="slide_banner">
+         <li><a href="#"><img src="img/images/box1_left.jpg" alt="울트라" />
+         <h3>울트라부스트 20 시티 팩</h3>
+         <p>RUNNING</p>
+         <h4>219,000원</h4>
+         </a>
+         </li>
+         <li><a href="#"><img src="img/images/box1_center.jpg" alt="조거" />
+         <h3>나이트 조거</h3>
+          <p>ORIGINALS</p>
+          <h4>139,000원</h4>
+          </a>
+         </li>
+         <li><a href="#"><img src="img/images/box1_right.jpg" alt="슈퍼스타" />
+         <h3>슈퍼스타</h3>
+         <p>ORIGINALS</p>
+         <h4>109,000원</h4>
+         </a>
+         </li>
+         <li><a href="#"><img src="img/images/box1_left.jpg" alt="사진4" />
+         <h3>울트라부스트 20 시티 팩</h3>
+         <p>RUNNING</p>
+         <h4>219,000원</h4>
+         </a>
+         </li>
+         <li><a href="#"><img src="img/images/box1_center.jpg" alt="사진5" />
+         <h3>나이트 조거</h3>
+         <p>ORIGINALS</p>
+         <h4>139,000원</h4>
+         </a>
+         </li>
+         <li><a href="#"><img src="img/images/box1_right.jpg" alt="사진6" />
+         <h3>슈퍼스타</h3>
+         <p>ORIGINALS</p>
+         <h4>109,000원</h4>
+         </a>
+         </li>      
+      </ul>
+      <p><a href="#" id="prevBtn"><img src="img/images/left.jpg" alt="이전버튼" /></a></p>
+      <p><a href="#" id="nextBtn"><img src="img/images/right.jpg" alt="다음버튼" /></a></p>
+   </div>
+                        <div class="data_box">
+                            <h2>지금 신규회원 가입하면  1만원 쿠폰 증정</h2>
+                            <div class="btn2"><a href="#">회원가입</a></div>
+                            <!-- :after으로 clear:both -->
+                        </div>
+                    
+                </div>
+            </div>
+            <!-- 우먼스 배너 -->
+            <div class="banner_set">
+                <div class="inner">
+                    <div>
+                        <p>SS20 아디다스 우먼스 컬렉션</p>
+                        <h3>즐겨,내방식대로.<br><span>MY GAME. MY WAY</span></h3>
+                        <div class="btn3"><a href="#">회원가입</a></div>    
+                    </div>
+                </div>
+            </div>
+            <!-- 우먼스 컬렉션 -->
+            <div class="women_set">
+                <h2>SS20 우먼스 컬렉션</h2>
+                <div class="womenslider">
+                    <div class="women_list">
+                       <div class="slide">
+                       <div class="s_img">
+                        <a href="#"><img src="img/images/box3_left.jpg" alt="윈드브레이커"></a>
+                        </div>
+                        <div class="box3_btn">윈드 브레이커</div>
+                        <p>움직임이 편하고 스타일리쉬한<br>디자인이 돋보이는 윈드 브레이커</p>
+                        </div>
+                        <div class="slide">
+                        <div class="s_img"><a href="#">
+                        <img src="img/images/box3_center.jpg" alt="미디엄서포트브라"></a>
+                        </div>
+                        <div class="box3_btn">미디엄 서포트 브라</div>
+                        <p>안감의 이중 파워 메쉬 원단이<br>안정적으로 받쳐주는 미디엄<br>서포트 브라</p>      
+                        </div>
+                        <div class="slide">
+                        <div class="s_img"><a href="#">
+                        <img src="img/images/box3_right.jpg" alt="타이츠"></a>
+                        </div>
+                        <div class="box3_btn">타이츠</div>
+                        <p>메쉬 원단으로 통기성이 뛰어나고<br>입체 컷팅으로 자신감을 더해주는<br>타이츠</p>
+                        </div>
+                        <!-- :after으로 clear:both -->
+                    </div>    
+                </div>
+            </div>
+            <!-- 멤버십 -->
+            <div class="member_set">
+                <h2>멤버만을 위한 혜택</h2>
+                <p>아디다스만의 멤버십 혜택을 경험해보세요</p>
+                <ul>
+                    <li>
+                        <i><a href="#"><img src="img/images/member1.jpg" alt="멤버샵"></a>
+                        </i>
+                        <p>MEMBER SHOP</p>
+                    </li>
+                    <li>
+                        <i><a href="#">
+                            <img src="img/images/member2.jpg" alt="스페셜"></a>
+                        </i>
+                        <p>SPECIAL EVENT</p>
+                    </li>
+                    <li>
+                       <i><a href="#">
+                        <img src="img/images/member3.jpg" alt="드로우"></a>
+                        </i>
+                        <p>THE DRAW</p>
+                    </li>
+                    <li>
+                        <i><a href="#">
+                            <img src="img/images/member4.jpg" alt="픽업"></a>
+                        </i>
+                        <p>PICK UP SERVICE</p>
+                    </li>
+                    <!-- :after으로 clear:both -->
+                </ul>
+            </div>
+            <!-- 서울 -->
+            <div class="seoul_set">                
+                <h2><span>태극을 새기다. 대한민국을 품다.</span><br><span>ULTRABOOST1988</span> <span>SEOUL</span></h2>
+            </div>
+            <!-- 공지 -->
+            <div class="board_set">
+              <div class="inner">
+               <div class="site">
+                   <select>
+                        <option>adidas Korea</option>
+                    </select>
+               </div>
+                <ul class="b_menu">                    
+                    <li>주문배송</li>
+                    <li>아디클럽</li>
+                    <li>공지사항</li>
+                    <li>매장안내</li>
+                    <li>단체주문</li>
+                    <li>고객센터1588-8241</li>
+                    <li>상담톡 <img src="img/images/TALK.png" alt="토크">
+                    </li>
+                    <!-- after으로 clear:both -->
+                </ul>
+                <ul class="b_icon">
+                    <li>
+                        <img src="img/images/blog.png" alt="블로그">
+                    </li>
+                    <li>
+                        <img src="img/images/facebook.png" alt="페이스북">
+                    </li>
+                    <li>
+                        <img src="img/images/twitter.png" alt="트위터">
+                    </li>
+                    <li>
+                        <img src="img/images/insta.png" alt="인스타">
+                    </li>
+                    <li>
+                        <img src="img/images/play.png" alt="유튜브">
+                    </li>
+                    <!-- after으로 clear:both -->
+                </ul>
+                <!-- after으로 clear:both -->
+                </div>
+            </div>
+        </div>
+        <!-- 여기부터 하단 -->
+        <div class="footer">
+            <!-- 위쪽하단 -->
+            <div class="top_footer">
+                <div class="inner">
+                    <ul>
+                        <li><a href="#">구매 이용약관</a></li>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">아디클럽 이용약관</a></li>
+                        <li><a href="#">사업자정보확인</a></li>
+                        <li><a href="#">공정거래 자율준수</a></li>
+                        <li><a href="#">채무지급보증안내</a></li>
+                        <!-- after으로 clear:both -->
+                    </ul>
+                </div>
+            </div>
+            <!-- 아래쪽 하단 -->
+            <div class="bottom_footer">
+                <div class="inner">
+                    <div class="f_logo">
+                        <img src="img/images/f_logo.png" alt="푸터로고">
+                    </div>
+                    <div class="copyright">
+                        <p>아디다스코리아(유) 서울특별시 서초대로 74길 4, 삼성생명 서초타워 23층 (06620) 대표자 : 올 유엔 파이 사업자 등록번호 : 214-81-07412<br>통신판매업신고 : 2007-서울서초-10391 개인정보관리책임자 : 장영태 호스팅서비스사업자 : 아디다스코리아(유)<br>고객센터 : 1588-8241 이메일 : adiclub_korea@adidas.com</p>
+                        <!-- :after으로 clear:both -->
+                        <p class="copy_t">
+                            ⓒadidas Korea, LLC. All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li><span>고객센터</span> <span>1588-8241</span></li>
+                            <!-- after으로 clear:both -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 여기까지 하단 -->
+        </div>
+    </div>
+</body>
+</html>
